@@ -1,0 +1,87 @@
+.logo {
+  height: 3.25rem;
+  margin-left: 3rem;
+}
+
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--color-grey-light-2);
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 10rem;
+    width: 90%;
+    transition: all 0.2s;
+    margin-right: -2.7rem;
+
+    &:focus {
+      width: 100%;
+      outline: none;
+      background-color: var(--color-grey-light-3);
+    }
+
+    ::placeholder {
+      color: var(--color-grey-light-4);
+      font-weight: 100;
+    }
+  }
+
+  &__input:focus + &__button {
+    background-color: var(--color-grey-light-3);
+  }
+
+  &__button {
+    background-color: var(--color-grey-light-2);
+    border: none;
+    transition: all 0.2s;
+
+    &:focus {
+      outline: none;
+      background-color: var(--color-grey-light-2);
+    }
+
+    &:active {
+      transform: translateY(0.2rem);
+    }
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--color-grey-dark-3)
+  }
+}
+
+.user-nav {
+  background-color: greenyellow;
+
+  display: flex;
+  &__icon-box {
+  }
+
+  &__icon {
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+
+  &__notifications {
+  }
+
+  &__user {
+  }
+
+  &__user-photo {
+    height: 3.75rem;
+    border-radius: 50%;
+  }
+
+  &__user-name {
+  }
+}
