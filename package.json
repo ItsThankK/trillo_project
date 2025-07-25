@@ -1,7 +1,7 @@
 {
   "name": "trillo",
   "version": "1.0.0",
-  "description": "Landing page for natours",
+  "description": "Trillo app",
   "main": "index.js",
   "scripts": {
     "watch:sass": "sass sass/main.scss css/style.css -w",
@@ -10,7 +10,7 @@
     "compile:sass": "sass sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "sass css/style.prefix.css css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "author": "Jonas",
   "license": "ISC",
