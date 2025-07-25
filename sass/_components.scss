@@ -55,31 +55,57 @@
   &__icon {
     width: 2rem;
     height: 2rem;
-    fill: var(--color-grey-dark-3)
+    fill: var(--color-grey-dark-3);
   }
 }
 
 .user-nav {
-  background-color: greenyellow;
-
+  align-self: stretch;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  & > *:hover {
+    background-color: var(--color-grey-light-2);
+  }
+
   &__icon-box {
+    position: relative;
   }
 
   &__icon {
     height: 2.2rem;
     width: 2.2rem;
+    fill: var(--color-grey-dark-2);
   }
 
   &__notifications {
-  }
-
-  &__user {
+    font-size: 0.8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: #fff;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__user-photo {
     height: 3.75rem;
     border-radius: 50%;
+    margin-right: 1rem;
   }
 
   &__user-name {

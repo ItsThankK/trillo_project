@@ -91,16 +91,47 @@ body {
 }
 
 .user-nav {
-  background-color: greenyellow;
+  align-self: stretch;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user-nav > * {
+  padding: 0 2rem;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.user-nav > *:hover {
+  background-color: var(--color-grey-light-2);
+}
+.user-nav__icon-box {
+  position: relative;
 }
 .user-nav__icon {
   height: 2.2rem;
   width: 2.2rem;
+  fill: var(--color-grey-dark-2);
+}
+.user-nav__notifications {
+  font-size: 0.8rem;
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: #fff;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .user-nav__user-photo {
   height: 3.75rem;
   border-radius: 50%;
+  margin-right: 1rem;
 }
 .container {
   max-width: 120rem;
@@ -111,6 +142,7 @@ body {
 }
 
 .header {
+  font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
   border-bottom: var(--color-grey-light-2);
