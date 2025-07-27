@@ -230,6 +230,34 @@ body {
   height: 1.75rem;
   fill: var(--color-primary);
 }
+.overview__icon-location {
+  margin-right: 0.5rem;
+}
+.overview__location {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.overview__rating {
+  background-color: var(--color-primary);
+  color: #fff;
+  margin-left: 3rem;
+  text-transform: uppercase;
+  align-self: stretch;
+  padding: 0 2.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.overview__rating-count {
+  font-size: 0.8rem;
+}
+.overview__rating-average {
+  font-size: 2.25rem;
+  font-weight: 300;
+}
+
 .btn-inline {
   border: none;
   background: transparent;
