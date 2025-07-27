@@ -212,12 +212,39 @@ body {
 .overview {
   display: flex;
   align-items: center;
+  border-bottom: 0.1rem solid var(--color-grey-light-2);
+}
+.overview__heading {
+  font-size: 2.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 1.5rem 3rem;
+}
+.overview__stars {
+  margin-right: auto;
+  display: flex;
 }
 .overview__icon-star, .overview__icon-location {
   width: 1.75rem;
   height: 1.75rem;
   fill: var(--color-primary);
 }
+.btn-inline {
+  border: none;
+  background: transparent;
+  color: var(--color-primary);
+  font-size: inherit;
+  border-bottom: 0.1rem solid currentColor;
+  padding-bottom: 0.2rem;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-inline:hover {
+  color: var(--color-grey-dark-1);
+}
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -230,7 +257,7 @@ body {
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-light-2);
+  border-bottom: 0.1rem solid var(--color-grey-light-2);
   display: flex;
   justify-content: space-between;
   align-items: center;

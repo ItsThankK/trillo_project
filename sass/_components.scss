@@ -200,13 +200,19 @@
 .overview {
   display: flex;
   align-items: center;
+  border-bottom: .1rem solid var(--color-grey-light-2);
 
   &__heading {
-
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    padding: 1.5rem 3rem;
   }
 
   &__stars {
-
+    margin-right: auto;
+    display: flex;
   }
 
   &__icon-star,
@@ -217,7 +223,6 @@
   }
 
   &__location {
-
   }
 
   &__rating {
@@ -230,5 +235,21 @@
 
   &__rating-average {
 
+  }
+}
+
+.btn-inline {
+  border: none;
+  background: transparent;
+  color: var(--color-primary);
+  font-size: inherit;
+  border-bottom: .1rem solid currentColor;
+  padding-bottom: .2rem;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.2s;
+   
+  &:hover {
+    color: var(--color-grey-dark-1);
   }
 }
