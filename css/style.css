@@ -154,10 +154,14 @@ body {
   width: 0.3rem;
   background-color: var(--color-primary);
   transform: scaleY(0);
-  transition: all 0.5s;
+  transition: transform 0.2s, width 0.5s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.2s;
 }
-.side-nav__item:hover::before {
+.side-nav__item:hover::before, .side-nav__item--active::before {
   transform: scaleY(1);
+  width: 100%;
+}
+.side-nav__item:active::before {
+  background-color: var(--color-primary-light);
 }
 .side-nav__link:link, .side-nav__link:visited {
   color: var(--color-grey-light-1);
@@ -166,6 +170,8 @@ body {
   padding: 1.5rem 3rem;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 10;
 }
 .side-nav__icon {
   width: 1.75rem;
