@@ -268,14 +268,14 @@
 
   &__span {
     margin-left: 3rem;
-    transition: margin-left .2s;
+    transition: margin-left 0.2s;
   }
 
   &:hover {
     color: var(--color-grey-dark-1);
 
     span {
-      margin-left: .8rem;
+      margin-left: 0.8rem;
     }
   }
 
@@ -411,10 +411,35 @@
     content: "\201C";
     position: absolute;
     top: -2.4rem;
-    left: -.8rem;
+    left: -0.8rem;
     font-size: 20rem;
     line-height: 1;
     color: var(--color-grey-light-2);
     font-family: sans-serif;
   }
+}
+
+.cta {
+  padding: 3.5rem 0;
+  text-align: center;
+
+  &__book-now {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.btn {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 10rem;
+  border: none;
+  background: linear-gradient(
+    to right,
+    var(--color-primary-light),
+    var(--color-primary)
+  );
 }
