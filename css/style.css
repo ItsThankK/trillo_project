@@ -272,8 +272,15 @@ body {
   cursor: pointer;
   transition: all 0.2s;
 }
+.btn-inline__span {
+  margin-left: 3rem;
+  transition: margin-left 0.2s;
+}
 .btn-inline:hover {
   color: var(--color-grey-dark-1);
+}
+.btn-inline:hover span {
+  margin-left: 0.8rem;
 }
 .btn-inline:focus {
   outline: none;
@@ -449,6 +456,9 @@ body {
 
 .user-reviews {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
