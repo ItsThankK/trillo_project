@@ -425,26 +425,33 @@ body {
   position: relative;
   overflow: hidden;
 }
-.btn__visible {
+.btn > * {
   display: inline-block;
-  padding: 2rem 7.5rem;
   transition: all 0.2s;
-}
-.btn__invisible {
-  display: inline-block;
-  position: absolute;
-  padding: 2rem 0;
   height: 100%;
   width: 100%;
+}
+.btn__visible {
+  padding: 2rem 7.5rem;
+}
+.btn__invisible {
+  position: absolute;
+  padding: 2rem 0;
   top: -100%;
   left: 0;
-  transition: all 0.2s;
+}
+.btn:hover {
+  background: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
 }
 .btn:hover .btn__visible {
   transform: translateY(5rem);
 }
 .btn:hover .btn__invisible {
   top: 0;
+}
+.btn:focus {
+  outline: none;
+  animation: pulsate 1s infinite;
 }
 
 .container {

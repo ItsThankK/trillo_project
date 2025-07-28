@@ -446,28 +446,41 @@
   position: relative;
   overflow: hidden;
 
-  &__visible {
+  & > * {
     display: inline-block;
-    padding: 2rem 7.5rem;
     transition: all 0.2s;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__visible {
+    padding: 2rem 7.5rem;
   }
 
   &__invisible {
-    display: inline-block;
     position: absolute;
     padding: 2rem 0;
-    height: 100%;
-    width: 100%;
     top: -100%;
     left: 0;
-    transition: all 0.2s;
   }
 
+  &:hover {
+    background: linear-gradient(
+      to left,
+      var(--color-primary-light),
+      var(--color-primary-dark)
+    );
+  }
   &:hover &__visible {
     transform: translateY(5rem);
   }
 
   &:hover &__invisible {
     top: 0;
+  }
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
   }
 }
