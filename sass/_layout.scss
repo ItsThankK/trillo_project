@@ -11,7 +11,7 @@
   font-size: 1.4rem;
   height: 7rem; 
   background-color: #fff;
-  border-bottom: .1rem solid var(--color-grey-light-2);
+  border-bottom: --line;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,6 +34,26 @@
 
 .hotel-view {
   background-color: #fff;
+  flex: 1;
+}
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line);
+}
+
+.description {
+  font-size: 1.4rem;
+  background-color: #fff;
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+}
+
+.user-reviews {
   flex: 1;
 }
 
