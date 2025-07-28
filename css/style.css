@@ -323,6 +323,27 @@ body {
   mask-size: cover;
 }
 
+.recommend {
+  font-size: 1.3rem;
+  color: var(--color-grey-dark-1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.recommend__friends {
+  display: flex;
+}
+.recommend__photo {
+  box-sizing: content-box;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  outline: #fff 0.2rem solid;
+}
+.recommend__photo:not(last-of-type) {
+  margin-left: -2rem;
+}
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
