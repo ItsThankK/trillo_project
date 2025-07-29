@@ -461,7 +461,6 @@ body {
   box-shadow: var(--shadow-dark);
   min-height: 50rem;
 }
-
 .header {
   font-size: 1.4rem;
   height: 7rem;
