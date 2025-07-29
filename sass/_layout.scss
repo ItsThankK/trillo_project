@@ -6,9 +6,17 @@
   
   min-height: 50rem;
 
-  @media only screen and (max-width: 1200px) {
-    
+  @media only screen and (max-width: $bp-largest) {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
   }
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%; // 8px = 8/16 = 0.5 = 50%
+  }
+
+
 }
 
 .header {

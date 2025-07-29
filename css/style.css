@@ -461,6 +461,19 @@ body {
   box-shadow: var(--shadow-dark);
   min-height: 50rem;
 }
+@media only screen and (max-width: 75em) {
+  .container {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 68.75em) {
+  .container {
+    font-size: 50%;
+  }
+}
+
 .header {
   font-size: 1.4rem;
   height: 7rem;
